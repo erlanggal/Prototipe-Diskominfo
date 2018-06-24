@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 0;
+}
+
+.logo{
+    background-color: #42f49e;
+    height: 60px;
+}
+
+.logo h1{
+    padding-left: 30px;
+}
+
+main{
+    margin-top: 20px;
+}
+
+.menu-bar{
+    border: 1px solid black;
+    height: 200px;
+}
+
+.menu-bar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu-bar a{
+    color: black;
+}
+
+.menu-bar a:hover{
+    color: #5c98f9;
+}
+
+.space-top{
+    margin-top: 15px;
+}
+
+.li-active{
+    background-color: #5c98f9;
+}
+
+.li-active a{
+    color: white;
+}
+
+.content h3{
+    padding-left: 10px;
+}
+
+.content td{
+    vertical-align: top;
+    padding: 10px;
+}
+
+.content-profile{
+    display: inline;
+}
+
+.departemen-list td{
+    padding: 15px;
+    text-align: center;
+}
+
+.departemen-list img{
+    width: auto;
+    height: 60px;
+}
+
+.profile-picture{
+    border: 1px solid yellow;
+    text-align: center;
+    font-size: 120px;
+    width: 230px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-detail{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dinas-profile-table td{
+    padding: 15px;
+}

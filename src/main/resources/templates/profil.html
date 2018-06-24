@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{/CSS/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/CSS/style.css}">
+
+    <script src="Script/jquery-3.3.1.min.js"></script>
+    <script src="Script/tether.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script src="Script/fontawesome-all.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <h1>Diskominfo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="menu-bar">
+                        <ul>
+                            <li><a th:href="@{'index'}">Beranda</a></li>
+                            <li class="space-top"><a th:href="@{'daftar-dinas'}">Departemen Pemerintahan Indonesia</a></li>
+                            <li class="space-top li-active"><a th:href="@{'profil'}">Profil</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="content">
+                        <h3>Data Diri</h3>
+
+                        <div class="content-profile">
+                            <div class="profile-picture">
+                                <i class="fas fa-user"></i>
+                            </div>
+
+                            <div class="profile-detail">
+                                <table class="profile-table">
+                                    <tr>
+                                        <td>
+                                            <h4>Erlangga Laimena</h4>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>erlanggalaimena@gmail.com</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Nomor Telepon</td>
+                                        <td>0000000000000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{/CSS/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/CSS/style.css}">
+
+    <script src="Script/jquery-3.3.1.min.js"></script>
+    <script src="Script/tether.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script src="Script/fontawesome-all.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <h1>Diskominfo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="menu-bar">
+                        <ul>
+                            <li><a th:href="@{'index'}">Beranda</a></li>
+                            <li class="space-top li-active"><a th:href="@{'daftar-dinas'}">Departemen Pemerintahan Indonesia</a></li>
+                            <li class="space-top"><a th:href="@{'profil'}">Profil</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="content">
+                        <h3>Daftar Departemen Pemerintahan Indonesia</h3>
+
+                        <table class="departemen-list">
+                            <tr>
+                                <td>
+                                    <img src="Images/LogoKemenag.png" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Agama</a>
+                                </td>
+
+                                <td>
+                                    <img src="Images/LogoKemenkumham.jpg" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Hukum dan Hak Asasi Manusia</a>
+                                </td>
+
+                                <td>
+                                    <img src="Images/LogoKementerianLingkunganHidupdanKehutanan.png" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Kehutanan</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="Images/LogoKemenkes.jpg" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Kesehatan</a>
+                                </td>
+
+                                <td>
+                                    <img src="Images/LogoKementerianKelautandanPerikanan.png" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Kelautan dan Perikanan</a>
+                                </td>
+
+                                <td>
+                                    <img src="Images/LogoKemendikbud.png" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Pendidikan dan Kebudayaan</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="Images/LogoKemendag.jpg" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Perdagangan</a>
+                                </td>
+
+                                <td>
+                                    <img src="Images/logoKemhan.png" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Pertahanan</a>
+                                </td>
+
+                                <td>
+                                    <img src="Images/LogoKemenperin.png" alt="logo"><br>
+                                    <a th:href="@{'dinas'}">Departemen Perindustrian</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
