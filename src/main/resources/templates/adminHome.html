@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{/CSS/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/CSS/style.css}">
+
+    <script src="Script/jquery-3.3.1.min.js"></script>
+    <script src="Script/tether.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script src="Script/fontawesome-all.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <h1>Diskominfo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="menu-bar">
+                        <ul>
+                            <li class="space-top">
+                                <a th:href="@{'adminHome'}">Laporan Baru</a>
+                            </li>
+                            <li class="space-top">
+                                <a th:href="@{'adminLaporanDikerjakan'}">Laporan Yang Dikerjakan</a>
+                            </li>
+                            <li class="space-top">
+                                <a th:href="@{'index'}">Halaman User</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="content">
+                        <h3>Laporan Baru</h3>
+                        <br>
+
+                        <div class="content-admin">
+                            <a th:href="@{'adminDetailLaporan'}">
+                                <table class="admin-content-table">
+                                    <tr>
+                                        <td colspan="2">
+                                            <h5>Lantai Kotor</h5>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="admin-content-table-title">Pelapor</td>
+                                        <td>Erlangga Laimena</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="admin-content-table-title">Detail Laporan</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed vestibulum felis,
+                                            eget scelerisque nisi. Praesent id euismod diam. Nam ut lacus eget sapien vehicula
+                                            tristique. Donec odio velit ...</td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </div>
+
+                        <div class="content-admin">
+                            <a th:href="@{'adminDetailLaporan'}">
+                                <table class="admin-content-table">
+                                    <tr>
+                                        <td colspan="2">
+                                            <h5>Pemungutan Liar</h5>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="admin-content-table-title">Pelapor</td>
+                                        <td>Erlangga Laimena</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="admin-content-table-title">Detail Laporan</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed vestibulum felis,
+                                            eget scelerisque nisi. Praesent id euismod diam. Nam ut lacus eget sapien vehicula
+                                            tristique. Donec odio velit ...</td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </div>
+
+                        <div class="content-admin">
+                            <a th:href="@{'adminDetailLaporan'}">
+                                <table class="admin-content-table">
+                                    <tr>
+                                        <td colspan="2">
+                                            <h5>E-KTP Belum Selesai</h5>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="admin-content-table-title">Pelapor</td>
+                                        <td>Erlangga Laimena</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="admin-content-table-title">Detail Laporan</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed vestibulum felis,
+                                            eget scelerisque nisi. Praesent id euismod diam. Nam ut lacus eget sapien vehicula
+                                            tristique. Donec odio velit ...</td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

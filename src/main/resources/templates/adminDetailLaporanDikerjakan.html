@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{/CSS/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/CSS/style.css}">
+
+    <script src="Script/jquery-3.3.1.min.js"></script>
+    <script src="Script/tether.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script src="Script/fontawesome-all.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <h1>
+                            <a th:href="@{'adminHome'}">Diskominfo</a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    <h2>Lantai Kotor</h2>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Pelapor :</td>
+                                <td>Erlangga Laimena</td>
+                            </tr>
+
+                            <tr>
+                                <td>Tanggal :</td>
+                                <td>02 Juli 2018</td>
+                            </tr>
+                        </table>
+                        <br>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed vestibulum felis, eget scelerisque nisi. Praesent id euismod
+                            diam. Nam ut lacus eget sapien vehicula tristique. Donec odio velit, auctor nec euismod et, imperdiet
+                            id mauris. Ut non facilisis metus, non rutrum tortor. Cras faucibus lectus nulla, vel faucibus
+                            mauris aliquam ut. Mauris nisi nibh, facilisis non fermentum id, fringilla at leo. Nulla vel
+                            blandit urna, a placerat nisl. Donec rutrum eget tortor et pharetra. Nunc in est in lacus luctus
+                            molestie. Aenean a ex congue, rutrum neque sit amet, rhoncus purus. Sed quis nunc ut eros sodales
+                            molestie at quis justo. Phasellus metus urna, dictum vel mauris et, convallis pellentesque elit.
+                            Sed faucibus felis nisi, a fringilla est iaculis a. Maecenas et feugiat quam.
+                        </p>
+
+                        <p>
+                            <a th:href="@{/Images/LogoKemenag.png}" download>
+                                <i class="far fa-file"></i> File Bukti</a>
+                        </p>
+                        <br>
+                       
+                        <p class="logo-p">
+                            <a th:href="@{'adminLaporanDikerjakan'}">
+                                <i class="fas fa-check-circle" style="color: #7ad361"></i>
+                            </a> Selesai</td>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

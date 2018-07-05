@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <link rel="stylesheet" th:href="@{/CSS/bootstrap.min.css}">
@@ -34,6 +34,7 @@
                             <li class="li-active"><a th:href="@{'index'}">Beranda</a></li>
                             <li class="space-top"><a th:href="@{'daftar-dinas'}">Departemen Pemerintahan Indonesia</a></li>
                             <li class="space-top"><a th:href="@{'profil'}">Profil</a></li>
+                            <li class="space-top"><a th:href="@{'adminHome'}">Halaman Admin</a></li>
                         </ul>
                     </div>
                 </div>
@@ -68,6 +69,7 @@
                                 <td>Kategori Dinas</td>
                                 <td>
                                     <select name="departemen" id="departemen">
+										<option value="">Dinas Komunikasi dan Informasi</option>
                                         <option value="">Departemen Agama</option>
                                         <option value="">Departemen Hukum dan Hak Asasi Manusia</option>
                                         <option value="">Departemen Kehutanan</option>
