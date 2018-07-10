@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pesan</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="js/fontawesome-all.js"></script>
+</head>
+
+<body>
+
+    <ul class="menu">
+
+        <li title="Beranda">
+            <a th:href="@{'berandaAdmin'}" class="home page-now">Beranda</a>
+        </li>
+        <li title="Proses Laporan">
+            <a th:href="@{'proses-laporan'}" class="pencil">Proses Laporan</a>
+        </li>
+        <li title="User">
+            <a th:href="@{'index'}" class="exchange">User</a>
+        </li>
+    </ul>
+
+    <div class="content">
+        <p class="left margin-20 title-p black">
+            <a th:href="@{'berandaAdmin'}">
+                <i class="fas fa-arrow-left"></i> Pesan
+            </a>
+        </p>
+
+        <table class="left margin-20">
+            <tr>
+                <td colspan="2">Kantor Kosong Pada Jam Kerja</td>
+            </tr>
+
+            <tr>
+                <td style="width: 100px">Pelapor :</td>
+                <td>Erlangga Laimena</td>
+            </tr>
+
+            <tr>
+                <td style="width: 100px">Tanggal :</td>
+                <td>6 Juli 2018</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed vestibulum felis, eget scelerisque nisi. Praesent id euismod
+                    diam. Nam ut lacus eget sapien vehicula tristique. Donec odio velit, auctor nec euismod et, imperdiet
+                    id mauris. Ut non facilisis metus, non rutrum tortor. Cras faucibus lectus nulla, vel faucibus mauris
+                    aliquam ut. Mauris nisi nibh, facilisis non fermentum id, fringilla at leo. Nulla vel blandit urna, a
+                    placerat nisl. Donec rutrum eget tortor et pharetra. Nunc in est in lacus luctus molestie. Aenean a ex
+                    congue, rutrum neque sit amet, rhoncus purus. Sed quis nunc ut eros sodales molestie at quis justo. Phasellus
+                    metus urna, dictum vel mauris et, convallis pellentesque elit. Sed faucibus felis nisi, a fringilla est
+                    iaculis a. Maecenas et feugiat quam.
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <a th:href="@{/images/LogoKemendikbud.png}" download>
+                        <i class="far fa-file"></i> Lampiran
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <div class="button-messages">
+            <div class="button-refuse">
+                <a th:href="@{'berandaAdmin'}" title="Tolak">
+                    <i class="far fa-times-circle"></i>
+                </a>
+            </div>
+
+            <div class="button-accept">
+                <a th:href="@{'proses-laporan'}" title="Proses">
+                    <i class="far fa-check-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

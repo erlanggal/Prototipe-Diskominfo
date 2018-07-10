@@ -2,99 +2,41 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <link rel="stylesheet" th:href="@{/CSS/bootstrap.min.css}">
-    <link rel="stylesheet" th:href="@{/CSS/style.css}">
+  <meta charset="UTF-8">
+  <title>Home</title>
 
-    <script src="Script/jquery-3.3.1.min.js"></script>
-    <script src="Script/tether.min.js"></script>
-    <script src="Script/bootstrap.min.js"></script>
-    <script src="Script/fontawesome-all.js"></script>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="logo">
-                        <h1>Diskominfo</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+  <ul class="menu">
 
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="menu-bar">
-                        <ul>
-                            <li class="li-active"><a th:href="@{'index'}">Beranda</a></li>
-                            <li class="space-top"><a th:href="@{'daftar-dinas'}">Departemen Pemerintahan Indonesia</a></li>
-                            <li class="space-top"><a th:href="@{'profil'}">Profil</a></li>
-                            <li class="space-top"><a th:href="@{'adminHome'}">Halaman Admin</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <li title="Beranda">
+      <a th:href="@{'index'}" class="home page-now">Beranda</a>
+    </li>
+    <li title="Pengaduan">
+      <a th:href="@{'pengaduan'}" class="pencil">Pengaduan</a>
+    </li>
+    <li title="Profil">
+      <a th:href="@{'profil'}" class="profile">Profil</a>
+    </li>
+    <li title="Admin">
+      <a th:href="@{'berandaAdmin'}" class="exchange">Admin</a>
+    </li>
+  </ul>
 
-                <div class="col-md-9">
-                    <div class="content">
-                        <h3>Laporan Anda</h3>
+  <div class="content">
+    <img src="images/logo.jpg" alt="Logo">
 
-                        <table>
-                            <tr>
-                                <td>Judul</td>
-                                <td>
-                                    <input type="text">
-                                </td>
-                            </tr>
+    <div class="wellcome-banner">
+      <p class="bold-ticker">Selamat datang di halaman pengaduan online Dinas Komunikasi dan Informasi</p>
+      <p class="bold">Adukan masalah yang Anda temukan saat menggunakan jasa pelayanan pemerintahan</p>
+    </div>
+  </div>
 
-                            <tr>
-                                <td>Bukti</td>
-                                <td>
-                                    <input type="file">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Detail Laporan</td>
-                                <td>
-                                    <textarea name="detailLaporan" id="detail-laporan" cols="50" rows="10"></textarea>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Kategori Dinas</td>
-                                <td>
-                                    <select name="departemen" id="departemen">
-										<option value="">Dinas Komunikasi dan Informasi</option>
-                                        <option value="">Departemen Agama</option>
-                                        <option value="">Departemen Hukum dan Hak Asasi Manusia</option>
-                                        <option value="">Departemen Kehutanan</option>
-                                        <option value="">Departemen Kesehatan</option>
-                                        <option value="">Departemen Kelautan dan Perikanan</option>
-                                        <option value="">Departemen Pendidikan Nasional</option>
-                                        <option value="">Departemen Perdagangan</option>
-                                        <option value="">Departemen Pertahanan</option>
-                                        <option value="">Departemen Perindustrian</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td style="text-align: center">
-                                    <button type="button" class="btn btn-primary">Kirim</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
 
 </body>
 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+</head>
+
+<body>
+
+    <ul class="menu">
+
+        <li title="Beranda">
+            <a th:href="@{'berandaAdmin'}" class="home page-now">Beranda</a>
+        </li>
+        <li title="Proses Laporan">
+            <a th:href="@{'proses-laporan'}" class="pencil">Proses Laporan</a>
+        </li>
+        <li title="User">
+            <a th:href="@{'index'}" class="exchange">User</a>
+        </li>
+    </ul>
+
+    <div class="content">
+        <p class="left margin-20 title-p">Laporan Baru</p>
+
+        <div class="messages">
+
+            <a th:href="@{'pesan'}">
+                <table class="left">
+                    <tr>
+                        <td>Erlangga laimena</td>
+                        <td rowspan="3" class="td-date">6 Juli 2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kantor kosong pada jam kerja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie odio nisi, non faucibus dolor
+                            aliquet quis. In faucibus sapien ac ...</td>
+                    </tr>
+                </table>
+            </a>
+
+            <a th:href="@{'pesan'}">
+                <table class="left">
+                    <tr>
+                        <td>Raymond</td>
+                        <td rowspan="3" class="td-date">28 Juni 2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kantor Belum Buka pada jam operasi</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie odio nisi, non faucibus dolor
+                            aliquet quis. In faucibus sapien ac ...</td>
+                    </tr>
+                </table>
+            </a>
+
+            <a th:href="@{'pesan'}">
+                <table class="left">
+                    <tr>
+                        <td>Faisal Wicaksono</td>
+                        <td rowspan="3" class="td-date">19 Juni 2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>E-KTP Belum Jadi</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie odio nisi, non faucibus dolor
+                            aliquet quis. In faucibus sapien ac ...</td>
+                    </tr>
+                </table>
+            </a>
+
+            <a th:href="@{'pesan'}">
+                <table class="left">
+                    <tr>
+                        <td>Ridho</td>
+                        <td rowspan="3" class="td-date">16 Juni 2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pemungutan Liar</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie odio nisi, non faucibus dolor
+                            aliquet quis. In faucibus sapien ac ...</td>
+                    </tr>
+                </table>
+            </a>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

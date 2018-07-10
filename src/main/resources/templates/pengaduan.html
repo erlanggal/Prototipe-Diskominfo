@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pengaduan</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+</head>
+
+<body>
+
+    <ul class="menu">
+
+        <li title="Beranda">
+            <a th:href="@{'index'}" class="home">Beranda</a>
+        </li>
+        <li title="Pengaduan">
+            <a th:href="@{'pengaduan'}" class="pencil page-now">Pengaduan</a>
+        </li>
+        <li title="Profil">
+            <a th:href="@{'profil'}" class="profile">Profil</a>
+        </li>
+        <li title="Admin">
+            <a th:href="@{'berandaAdmin'}" class="exchange">Admin</a>
+        </li>
+    </ul>
+
+    <div class="content">
+
+        <p class="left margin-20 title-p">Laporan Anda</p>
+
+        <div class="form">
+            <p type="Judul">
+                <input placeholder="Masukan Judul Pengaduan" class="input-edit">
+            </p>
+
+            <p type="Detail Laporan">
+                <input placeholder="Masukan Detail Masalah" class="input-edit">
+            </p>
+
+            <p type="Lampiran">
+                <input type="file" style="width: 100%; outline: none">
+            </p>
+
+            <p type="Tujuan">
+                <select name="departemen" id="departemen">
+                    <option value="">Dinas Komunikasi dan Informasi</option>
+                    <option value="">Departemen Agama</option>
+                    <option value="">Departemen Hukum dan Hak Asasi Manusia</option>
+                    <option value="">Departemen Kehutanan</option>
+                    <option value="">Departemen Kesehatan</option>
+                    <option value="">Departemen Kelautan dan Perikanan</option>
+                    <option value="">Departemen Pendidikan Nasional</option>
+                    <option value="">Departemen Perdagangan</option>
+                    <option value="">Departemen Pertahanan</option>
+                    <option value="">Departemen Perindustrian</option>
+                </select>
+            </p>
+
+            <a th:href="@{'pengaduan-sukses'}">
+                <div class="button">
+                    submit
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
